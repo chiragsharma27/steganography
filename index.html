@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Steganography Website</h1>
+
+    <div class="options-section">
+        <label for="actionType">Select Action:</label>
+        <select id="actionType" onchange="showOptions()">
+            <option value="encode">Encode</option>
+            <option value="decode">Decode</option>
+        </select>
+
+        <div id="encodeOptions" class="options">
+            <h2>Encode Options</h2>
+            <a href="textInImage.html">Text in Image</a>
+            <a href="imageInImage.html">Image in Image</a>
+        </div>
+
+        <div id="decodeOptions" class="options">
+            <h2>Decode Options</h2>
+            <a href="textInImage.html">Text in Image</a>
+            <a href="imageInImage.html">Image in Image</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

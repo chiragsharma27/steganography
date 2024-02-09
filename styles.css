@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #bfe3f5; /* Light Blue */
+    color: #333;
+}
+
+h1 {
+    color: #005f8a; /* Dark Blue */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+select, a, button {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+select {
+    background-color: #0077b6; /* Deep Blue */
+}
+
+a, button {
+    background-color: #0077b6; /* Deep Blue */
+}
+
+a:hover, button:hover {
+    background-color: #003366; /* Darker Blue */
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options a {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #48a1bf; /* Sky Blue */
+    border: 1px solid #0077b6; /* Deep Blue */
+    border-radius: 5px;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.options a:hover {
+    background-color: #005f8a; /* Dark Blue */
+}
+
+
+

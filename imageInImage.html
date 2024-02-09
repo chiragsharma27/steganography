@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in Image Option</title>
+    <link rel="stylesheet" href="imageInImageStyles.css">
+</head>
+<body>
+    <section id="image-in-image">
+        <h1>Image in Image Option</h1>
+        <p>Hide one image within another:</p>
+        <form id="imageInImageForm">
+            <label for="cover-image-upload">Select Stego Image:</label>
+            <input type="file" id="cover-image-upload" accept="image/*">
+            <!-- <label for="hidden-image-upload">Select Hidden Image:</label>
+            <input type="file" id="hidden-image-upload" accept="image/*"> -->
+            <button type="button" id="hide-image">Download hidden Image</button>
+        </form>
+        <div id="result-image-in-image">
+            <!-- Display the cover image with hidden content here -->
+        </div>
+    </section>
+
+    <script src="imageInImageScript.js"></script>
+</body>
+</html>
+

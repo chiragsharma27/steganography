@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in Image Option</title>
+    <link rel="stylesheet" href="textInImageStyles.css">
+</head>
+<body>
+    <section id="text-in-image">
+        <h1>Text in Image Option</h1>
+
+        <form id="textInImageForm">
+            <div class="input-container">
+                <label for="cover-image-upload">Select Stego Image:</label>
+                <input type="file" id="cover-image-upload" accept="image/*">
+            </div>
+
+            <!-- <div class="input-container">
+                <label for="hidden-text">Text to Hide:</label>
+                <textarea id="hidden-text" rows="4"></textarea>
+            </div> -->
+
+            <button type="button" id="encode-text-in-image">Download Text</button>
+        </form>
+
+        <div id="result-text-in-image">
+            <!-- Display the result or encoded image here -->
+        </div>
+    </section>
+
+    <script src="TextInImageScript.js"></script>
+</body>
+</html>
