@@ -10,7 +10,7 @@ section#text-in-image {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(243, 238, 240, 0.783);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -32,6 +32,8 @@ form {
 }
 
 .input-container {
+    justify-content: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -60,4 +62,9 @@ button:hover {
 
 #result-text-in-image {
     margin-top: 20px;
+}
+
+#cover-image-upload {
+    justify-content: center;
+    align-items: center;
 }

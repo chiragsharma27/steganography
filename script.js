@@ -1,14 +1,13 @@
 function showOptions() {
     var actionType = document.getElementById("actionType").value;
-    //var encodeOptions = document.getElementById("encodeOptions");
-    //var decodeOptions = document.getElementById("decodeOptions");
+    var encodeOptions = document.getElementById("encodeOptions");
+    var decodeOptions = document.getElementById("decodeOptions");
 
     if (actionType === "encode") {
-        encodeOptions.style.display = "block";
-        decodeOptions.style.display = "none";
-    } else if (actionType === "decode") {
-        decodeOptions.style.display = "block";
         encodeOptions.style.display = "none";
+        decodeOptions.style.display = "none";
+    } else {
+        encodeOptions.style.display = "none";
+        decodeOptions.style.display = "none";
     }
 }
-
