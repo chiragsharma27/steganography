@@ -1,0 +1,247 @@
+/*Light blue - #d0e8fa
+dark blue - rgba(120, 185, 234, 0.35)
+*/
+
+/*Navigation Bar */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background-color: #d0e8fa;
+  padding: 20px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links li a {
+  display: block; 
+  padding: 10px 20px; 
+  color: #080808;
+  background-color: #d0e8fa;
+  text-decoration: none;
+  position: relative; /* Add relative positioning */
+}
+
+.nav-links li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgba(120, 185, 234, 0.35);
+  transition: width 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* Increase width to create the underline effect */
+  height: 9%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 20px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+.main-heading {
+  position: absolute;
+  top: 214px;
+  left: 350px;
+  font-size: 48px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 740px;
+  height: 174px;
+}
+.stego-info01 {
+  margin: 0;
+}
+.stego-info02 {
+  margin: 0;
+  font-size: 17px;
+  /* white-space: pre-wrap; */
+}
+.stego-info01 {
+  position: relative;
+  font-weight: 300;
+  mix-blend-mode: normal;
+  font-size: 17px;
+}
+.h1-subheading {
+  top: 388px;
+  left: 255px;
+  background-color: var(--color-lavender);
+  box-shadow: 14px 14px 100px 10px rgba(245, 245, 245, 0.41);
+  width: 930px;
+  height: 79px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.h1-subheading,
+.h1-subheading-wrapper,
+.h1-subheading1 {
+  position: absolute;
+  border-radius: var(--br-11xl);
+}
+.h1-subheading1 {
+  top: 29px;
+  left: 95px;
+  background-color: rgba(120, 185, 234, 0.35);
+  width: 930px;
+  height: 79px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  box-sizing: border-box;
+}
+.h1-subheading-wrapper {
+  top: 546px;
+  left: 160px;
+  background-color: rgba(120, 185, 234, 0.37);
+  width: 1120px;
+  height: 354px;
+  overflow: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/*body {
+  font-family: "Inter", sans-serif;
+  color: #000021;
+  font-size: calc(1em + 1.25vw);
+  background-color: #e6e6ef;
+}*/
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+  /* Accessible outline */
+  /* Remove comment to use */
+  /*
+  	&:focus-within {
+  			outline: .125em solid $primary-color;
+  	}
+  */
+}
+label input {
+  position: absolute;
+  left: -9999px;
+}
+label input:checked + span {
+  background-color: rgba(195, 227, 251, 0.759);
+}
+label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em rgb(120, 185, 234);
+}
+label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+label span:hover {
+  background-color: rgba(195, 227, 251, 0.759)
+}
+label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #78b9ea5e;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em rgb(120, 185, 234);
+}
+
+.container {
+  position: relative;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.desktop-1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-lavender);
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--nav2-size);
+  color: var(--color-black);
+  font-family: var(--nav2);
+}

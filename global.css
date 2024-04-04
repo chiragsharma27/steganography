@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --nav2: Outfit;
+  
+    /* font sizes */
+    --nav2-size: 20px;
+  
+    /* Colors */
+    --color-lavender: #d0e8fa;
+    --color-black: #000;
+  
+    /* Border radiuses */
+    --br-11xl: 30px;
+  }
+  
